@@ -2,6 +2,7 @@
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 import {
   Key,
   ReactElement,

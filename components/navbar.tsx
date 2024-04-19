@@ -1,13 +1,19 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 const Navbar: React.FC = () => {
+    const [open, setOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setOpen(!open);
+    };
+    
     return (
         <nav className="bg-gray-800 p-4">
             <div className="container mx-auto">
                 <ul className="flex flex-wrap justify-between items-center">
                     <div className=''>
-                        {/* <img src="/logo.png" alt="logo" className="w-10 h-10" /> */}
-                        Logo
+                        <Link href="/">Logo</Link>
                     </div>
                     <div className='flex justify-between items-center'>
                         <li className="mx-2">

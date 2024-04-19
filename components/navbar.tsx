@@ -41,14 +41,14 @@ const Navbar: React.FC = () => {
                         <header>
                             <SignedOut>
                                 <SignInButton />
+                                {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            SIGN IN
+                        </button> */}
                             </SignedOut>
                             <SignedIn>
                                 <UserButton />
                             </SignedIn>
                         </header>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Connect wallet
-                        </button>
                     </div>
                 </ul>
             </div>

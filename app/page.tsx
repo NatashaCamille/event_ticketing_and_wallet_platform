@@ -1,3 +1,4 @@
+
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -140,3 +141,5 @@ function Navbar() {
     </div>
   )
 }
+
+ 

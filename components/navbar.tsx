@@ -1,3 +1,4 @@
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 
 const Navbar: React.FC = () => {
@@ -37,6 +38,14 @@ const Navbar: React.FC = () => {
                         </li>
                     </div>
                     <div className=''>
+                        <header>
+                            <SignedOut>
+                                <SignInButton />
+                            </SignedOut>
+                            <SignedIn>
+                                <UserButton />
+                            </SignedIn>
+                        </header>
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             Connect wallet
                         </button>

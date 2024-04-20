@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs/server';
 import Link from 'next/link';
@@ -5,13 +6,19 @@ import React from 'react';
 
 const Navbar: React.FC = async () => {
     const user = await currentUser();
+
+    const [open, setOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setOpen(!open);
+    };
+
     return (
         <nav className="bg-gray-800 p-4">
             <div className="container mx-auto">
                 <ul className="flex flex-wrap justify-between items-center">
                     <div className=''>
-                        {/* <img src="/logo.png" alt="logo" className="w-10 h-10" /> */}
-                        VACAD EVENT TICKETING PLATFORM
+                        <Link href="/">Logo</Link>
                     </div>
                     <div className='flex justify-between items-center'>
                         <li className="mx-2">

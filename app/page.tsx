@@ -5,20 +5,13 @@ import Link from 'next/link'
 import React from 'react'
 import Footer from '@/components/footer'
 import {
-  Key,
   ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  ReactPortal,
-  AwaitedReactNode,
 } from 'react'
 
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen flex-col p-2
-    // bg-[url('/weare.jpg')] 
-    bg-gradient-to-r from-[#e5e7eb] to-[#f3f4f6]
+      className="flex min-h-screen flex-col p-2 bg-gradient-to-r from-[#e5e7eb] to-[#f3f4f6]
     "
     >
       {/* <Navbar /> */}

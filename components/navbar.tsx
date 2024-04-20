@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs/server';
 import Link from 'next/link';
@@ -7,18 +6,13 @@ import React from 'react';
 const Navbar: React.FC = async () => {
     const user = await currentUser();
 
-    const [open, setOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setOpen(!open);
-    };
 
     return (
         <nav className="bg-gray-800 p-4">
             <div className="container mx-auto">
                 <ul className="flex flex-wrap justify-between items-center">
                     <div className=''>
-                        <Link href="/">Logo</Link>
+                        <Link className='text-3xl italic text-white p-3 text-shadow:_0_1px_0_rgb(0_0_0_/_40%)' href="/">Vacad</Link>
                     </div>
                     <div className='flex justify-between items-center'>
                         <li className="mx-2">
@@ -38,7 +32,7 @@ const Navbar: React.FC = async () => {
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/venue">
-                                Venue
+                                VENUE
                             </Link>
                         </li>
                         {!user ? (
@@ -46,7 +40,7 @@ const Navbar: React.FC = async () => {
                         ): (
                             <li className="mx-2">
                                 <Link className="text-white hover:text-gray-300" href="/dashboard">
-                                    Dashboard
+                                    DASHBOARD
                                 </Link>
                             </li>
                         

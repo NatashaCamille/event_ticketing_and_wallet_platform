@@ -11,22 +11,22 @@ const Navbar: React.FC = async () => {
                 <ul className="flex flex-wrap justify-between items-center">
                     <div className=''>
                         {/* <img src="/logo.png" alt="logo" className="w-10 h-10" /> */}
-                        Logo
+                        VACAD EVENT TICKETING PLATFORM
                     </div>
                     <div className='flex justify-between items-center'>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/">
-                                Home
+                                HOME
                             </Link>
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/schedule">
-                                Schedule
+                                EVENTS
                             </Link>
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/speakers">
-                                Speakers
+                                CONTACT US
                             </Link>
                         </li>
                         <li className="mx-2">

@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
+import React from 'react';
 
 const Navbar: React.FC = () => {
     const [open, setOpen] = useState(false);
@@ -18,34 +20,42 @@ const Navbar: React.FC = () => {
                     <div className='flex justify-between items-center'>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/">
-                                Home
+                                HOME
                             </Link>
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/schedule">
-                                Schedule
+                                EVENTS
                             </Link>
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/speakers">
-                                Speakers
+                                CONTACT US
                             </Link>
                         </li>
-                        <li className="mx-2">
+                        {/* <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/venue">
                                 Venue
                             </Link>
-                        </li>
-                        <li className="mx-2">
+                        </li> */}
+                        {/* <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/register">
                                 Register
                             </Link>
-                        </li>
+                        </li> */}
                     </div>
                     <div className=''>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Connect wallet
-                        </button>
+                        <header>
+                            <SignedOut>
+                                <SignInButton />
+                                {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            SIGN IN
+                        </button> */}
+                            </SignedOut>
+                            <SignedIn>
+                                <UserButton />
+                            </SignedIn>
+                        </header>
                     </div>
                 </ul>
             </div>

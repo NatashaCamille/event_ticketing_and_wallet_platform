@@ -46,7 +46,7 @@ const EventForm: React.FC = () => {
           name="eventName"
           onChange={handleChange}
           value={event.eventName}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <div className="mb-4">
@@ -58,7 +58,7 @@ const EventForm: React.FC = () => {
           name="description"
           onChange={handleChange}
           value={event.description}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         ></textarea>
       </div>
       <div className="mb-4">
@@ -71,7 +71,7 @@ const EventForm: React.FC = () => {
           name="price"
           onChange={handleChange}
           value={event.price}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <div className="mb-4">
@@ -84,7 +84,7 @@ const EventForm: React.FC = () => {
           name="date"
           onChange={handleChange}
           value={event.date}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <div className="mb-4">
@@ -97,7 +97,7 @@ const EventForm: React.FC = () => {
           name="time"
           onChange={handleChange}
           value={event.time}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <div className="mb-4">
@@ -110,7 +110,7 @@ const EventForm: React.FC = () => {
           name="image"
           onChange={handleChange}
           value={event.image}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <div className="mb-4">
@@ -123,7 +123,7 @@ const EventForm: React.FC = () => {
           name="location"
           onChange={handleChange}
           value={event.location}
-          className="mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+          className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
       <button

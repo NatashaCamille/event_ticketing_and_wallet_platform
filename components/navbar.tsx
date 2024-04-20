@@ -27,11 +27,11 @@ const Navbar: React.FC = () => {
                                 CONTACT US
                             </Link>
                         </li>
-                        <li className="mx-2">
+                        {/* <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/venue">
                                 Venue
                             </Link>
-                        </li>
+                        </li> */}
                         {/* <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/register">
                                 Register

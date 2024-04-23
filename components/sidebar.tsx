@@ -19,7 +19,9 @@ const Sidebar = () => {
                 <Link href="/list-events-page" className="text-white hover:text-gray-300 py-2 px-4">List Events</Link>
             </div>
         </div>
+        </div>
+     </div>   
     );
-};
+}
 
 export default Sidebar;

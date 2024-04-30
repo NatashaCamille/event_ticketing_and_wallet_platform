@@ -27,7 +27,7 @@ export default function Home() {
               href="https://decentracode.xyz/dashboard"
               className="text-blue-400 md:text-md"
             >
-              to purchase tickets for web3 events.{' '}
+              to purchase tickets for your events.{' '}
             </Link>
             Click on the link below.
           </p>

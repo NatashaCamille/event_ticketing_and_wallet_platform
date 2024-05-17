@@ -126,6 +126,8 @@ const EventForm: React.FC = () => {
           className="mt-1 block w-full shadow-sm outline-none border-gray-300 rounded-md"
         />
       </div>
+      <div>
+      </div>
       <button
         type="submit"
         className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"

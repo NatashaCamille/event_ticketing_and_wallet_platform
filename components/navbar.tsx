@@ -32,7 +32,7 @@ const Navbar: React.FC = async () => {
                         </li>
                         <li className="mx-2">
                             <Link className="text-white hover:text-gray-300" href="/venue">
-                                VENUE
+                                LOCATIONS 
                             </Link>
                         </li>
                         {!user ? (
